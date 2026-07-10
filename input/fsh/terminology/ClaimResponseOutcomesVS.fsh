@@ -1,5 +1,5 @@
 ValueSet: ClaimResponseOutcomeVS
-Id: claim-response-coutcome-vs
+Id: claim-response-outcome-vs
 Title: "Claim Response Outcome VS"
 Description: "Claim Response Outcome ValueSet with translations in Uzbek and Russian"
 
@@ -8,4 +8,4 @@ Description: "Claim Response Outcome ValueSet with translations in Uzbek and Rus
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(ClaimResponseOutcomeCS)
 
-* include codes from system ClaimResponseOutcomeCS
+* include codes from system $claim-response-outcome

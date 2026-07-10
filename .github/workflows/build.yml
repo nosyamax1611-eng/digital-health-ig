@@ -2,7 +2,7 @@ on:
   push:
     branches: [ UZCoreClaimResponse ]
   pull_request:
-    branches: [ UZCoreClaimResponsejava --version ]
+    branches: [ UZCoreClaimResponse ]
 
 jobs:
   build:

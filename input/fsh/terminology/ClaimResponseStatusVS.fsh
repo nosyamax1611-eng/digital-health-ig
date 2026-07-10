@@ -8,4 +8,4 @@ Description: "Claim Response Status ValueSet with translations in Uzbek and Russ
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(ClaimResponseStatusCS)
 
-* include codes from system ClaimResponseStatusCS
+* include codes from system $claim-status
