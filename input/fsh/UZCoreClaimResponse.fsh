@@ -19,15 +19,12 @@ Description: "Uzbekistan Core Claim Response profile, used to represent claim ad
 * use from ClaimUseVS (required)
   * ^short = "The payment workflow begins with a preauthorization request to reserve the estimated amount for the requested healthcare services. After the services are provided, a final Claim containing the completed Form 066 is submitted to finalize adjudication and payment."
 * patient 1..1 MS
-  * only Reference(UZCorePatient)
   * ^short = "The patient for whom reimbursement is being requested."
 * created MS
   * ^short = "The date the claim was created."
 * insurer 
-  * only Reference(UZCoreOrganization)
   * ^short = "The organization responsible for reimbursing the healthcare provider."
 * request 
-  * only Reference(Claim)
   * ^short = "The unique identifier of the claim."
 * outcome MS
   * ^short = "Processing outcome of the claim"
@@ -62,7 +59,7 @@ Usage: #example
 * patient = Reference(Patient/example-salim)
 * created = "2026-03-10"
 * insurer = Reference(Organization/example-organization)
-* outcome = #completed
+* outcome = #complete
 * preAuthRef = "PA-2026-001"
 * preAuthPeriod.start = "2026-03-11"
 * preAuthPeriod.end = "2026-05-11"
