@@ -54,7 +54,7 @@ Description: "An example claim response for institutional claim"
 Usage: #example
 
 * status = #active
-* type = ClaimTypeCS#institutional
+* type = $claim-type#institutional
 * use = #claim
 * patient = Reference(Patient/example-salim)
 * created = "2026-03-10"
@@ -63,6 +63,6 @@ Usage: #example
 * preAuthRef = "PA-2026-001"
 * preAuthPeriod.start = "2026-03-11"
 * preAuthPeriod.end = "2026-05-11"
-* total[0].category = ClaimResponseCategoryCS#benefit "Benefit Amount"
+* total[0].category = $claim-response-category#benefit "Benefit Amount"
 * total[0].amount.value = 10000
 * total[0].amount.currency = #UZS
