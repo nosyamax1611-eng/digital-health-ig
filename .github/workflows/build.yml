@@ -1,8 +1,9 @@
+build.yml 
 on:
   push:
-    branches: [ UZCoreServiceRequest ]
+    branches: [ ServiceRequest ]
   pull_request:
-    branches: [ UZCoreServiceRequest ]
+    branches: [ ServiceRequest ]
 
 jobs:
   build:
