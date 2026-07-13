@@ -1,4 +1,4 @@
-build.yml 
+name: build
 on:
   push:
     branches: [ ServiceRequest ]
