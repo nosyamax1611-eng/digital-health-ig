@@ -59,7 +59,7 @@ Usage: #example
 * patient = Reference(Patient/example-salim)
 * created = "2026-03-10"
 * insurer = Reference(Organization/example-organization)
-* outcome = #completed
+* outcome = #complete
 * preAuthRef = "PA-2026-001"
 * preAuthPeriod.start = "2026-03-11"
 * preAuthPeriod.end = "2026-05-11"
