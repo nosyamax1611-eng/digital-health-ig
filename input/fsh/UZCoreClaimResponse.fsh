@@ -53,13 +53,13 @@ Title: "Example Claim Response"
 Description: "An example claim response for institutional claim"
 Usage: #example
 
-* status = #active
+* status = $claim-status#active
 * type = $claim-type#institutional
-* use = #claim
+* use = $claim-use#claim
 * patient = Reference(Patient/example-salim)
 * created = "2026-03-10"
 * insurer = Reference(Organization/example-organization)
-* outcome = #complete
+* outcome = $claim-response-outcome#complete
 * preAuthRef = "PA-2026-001"
 * preAuthPeriod.start = "2026-03-11"
 * preAuthPeriod.end = "2026-05-11"

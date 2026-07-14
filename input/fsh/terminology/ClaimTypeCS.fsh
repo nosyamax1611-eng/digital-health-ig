@@ -3,7 +3,7 @@ Id: claim-type-cs
 Title: "Claim Type CS"
 Description: "Claim Type supplement with translations in Uzbek and Russian"
 
-* insert SupplementCodeSystemDraft(claim-type-cs, $claim-type, 5.0.0)
+* insert SupplementCodeSystemDraft(claim-type-cs, $claim-type, 0.6.0)
 * ^experimental = true
 
 * #institutional

@@ -3,7 +3,7 @@ Id: claim-use-cs
 Title: "Claim Use CS"
 Description: "Claim Use supplement with translations in Uzbek and Russian"
 
-* insert SupplementCodeSystemDraft(claim-use-cs, $claim-use, 5.0.0)
+* insert SupplementCodeSystemDraft(claim-use-cs, $claim-use, 0.6.0)
 * ^experimental = true
 
 * #claim

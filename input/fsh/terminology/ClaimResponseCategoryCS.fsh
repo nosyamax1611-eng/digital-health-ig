@@ -3,7 +3,7 @@ Id: claim-response-category-cs
 Title: "Claim Response Category CS"
 Description: "Claim Response Category supplement with translations in Uzbek and Russian"
 
-* insert SupplementCodeSystemDraft(claim-response-category-cs, $claim-response-category, 0.1.0)
+* insert SupplementCodeSystemDraft(claim-response-category-cs, $claim-response-category, 0.6.0)
 * ^experimental = true
 
 * #benefit

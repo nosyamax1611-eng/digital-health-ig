@@ -3,7 +3,7 @@ Id: claim-response-status-cs
 Title: "Claim Response Status CS"
 Description: "Claim Response Status supplement with translations in Uzbek and Russian"
 
-* insert SupplementCodeSystemDraft(claim-response-status-cs, $claim-status, 5.0.0)
+* insert SupplementCodeSystemDraft(claim-response-status-cs, $claim-status, 0.6.0)
 * ^experimental = true
 
 * #active
