@@ -142,6 +142,7 @@ Alias: $temp-medical-record-example-org = https://dhp.uz/fhir/core/sid/pid/uz/pr
 Alias: $temp-medical-record-pattern = https://dhp.uz/fhir/core/sid/pid/uz/prn/000000000/mrt
 Alias: $translation-extension = http://hl7.org/fhir/StructureDefinition/translation
 Alias: $triggered-by-type = http://hl7.org/fhir/observation-triggeredbytype
+Alias: $task-status = http://hl7.org/fhir/task-status
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $ucum-vs = http://terminology.hl7.org/ValueSet/ucum-common
 Alias: $unknownpatient = https://dhp.uz/fhir/core/sid/pid/uz/mrt
