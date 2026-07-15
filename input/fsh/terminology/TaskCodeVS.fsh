@@ -6,7 +6,6 @@ Description: "Task Code in Uzbekistan"
 * ^experimental = true
 * ^language = #uz
 
-* include codes from system TaskCodeCS
-
+* include codes from system task-code-cs
 
 

@@ -6,3 +6,5 @@ Description: "Task Status codes with Uzbek and Russian translations"
 * ^experimental = true
 * ^extension[0].url = $task-status
 * ^extension[=].valueCanonical = Canonical(TaskStatusCS)
+
+* include codes from system $task-status
