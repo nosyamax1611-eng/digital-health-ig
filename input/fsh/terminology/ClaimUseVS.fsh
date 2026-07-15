@@ -8,4 +8,4 @@ Description: "Claim Use ValueSet with translations in Uzbek and Russian"
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(ClaimUseCS)
 
-* include codes from system ClaimUseCS
+* include codes from system $claim-use
