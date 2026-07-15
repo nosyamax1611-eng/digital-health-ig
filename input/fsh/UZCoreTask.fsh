@@ -23,11 +23,11 @@ Description: "Uzbekistan Core Task profile, used to  track workflow steps of the
 
 * basedOn 1..1 MS
   * ^short = "Service request under which this task is performed"
-  * only Reference(ServiceRequest)
+* basedOn only Reference(ServiceRequest)
 
 * partOf MS
   * ^short = "Parent task in the workflow"
-  * only Reference(Task)
+* partOf only Reference(Task)
 
 * status MS
   * ^short = "Task status"
@@ -43,11 +43,11 @@ Description: "Uzbekistan Core Task profile, used to  track workflow steps of the
 
 * focus 1..1 MS
   * ^short = "Service request being acted upon"
-  * only Reference(UZCorePatient)
+* focus only Reference(UZCorePatient)
 
 * for MS
   * ^short = "Patient for whom this task is performed"
-  * only Reference(UZCorePatient)
+* for only Reference(UZCorePatient)
 
 * owner ^short = "Organization or practitioner responsible for the task"
 * owner only Reference(UZCoreOrganization or UZCorePractitionerRole)
@@ -61,3 +61,107 @@ Description: "Uzbekistan Core Task profile, used to  track workflow steps of the
   * start and end MS
 
 * obeys uzcore-tsk-1
+
+Instance: example-task-family-doctor
+InstanceOf: UZCoreTask
+Description: "Example of state-insurance workflow task assigned to the family doctor for initial approval"
+Usage: #example
+* language = #uz
+* code = task-code-cs#approve-family-doctor "Oilaviy shifokorning roziligi"
+* basedOn = Reference(ServiceRequest/example-cbc-order)
+* status = #in-progress
+* businessStatus = task-business-status-cs#overdue "Muddati o'tgan"
+* intent = task-intent-cs#order "Buyurtma"
+* focus = Reference(ServiceRequest/example-cbc-order)
+* for = Reference(Patient/example-salim)
+* owner = Reference(Organization/xonobod-medical-association)
+* requestedPeriod
+  * start = "2026-03-05"
+  * end = "2026-03-06"
+* executionPeriod
+  * start = "2026-03-05"
+  * end = "2026-03-06"
+
+Instance: example-task-specialist
+InstanceOf: UZCoreTask
+Description: "Example of a state-insurance workflow task assigned to a specialist physician for review"
+Usage: #example
+* language = #uz
+* code = task-code-cs#approve-specialist "Mutaxassisning roziligi"
+* basedOn = Reference(ServiceRequest/example-cbc-order)
+* partOf = Reference(Task/example-task-family-doctor)
+* status = #requestedPeriod
+* businessStatus = task-business-status-cs#overdue "Muddati o'tgan"
+* intent = task-intent#order "Buyurtma"
+* focus = Reference(ServiceRequest/example-bcb-order)
+* for = Reference(Patient/example-david)
+* owner = Reference(Organization/tashkent-diseases-hospital)
+* requestedPeriod
+  * start = "2026-03-06"
+  * end = "2026-03-07"
+* executionPeriod
+  * start = "2026-03-06"
+  * end = "2026-03-07"
+
+Instance: example-task-regional-commission
+InstanceOf: UZCoreTask
+Description: "Example of a state-insurance workflow task assigned to the regional health commission for approval"
+Usage: #example
+* language = #uz
+* code = task-code-cs#approve-regional-commission "Mintaqaviy komissiyaning roziligi"
+* basedOn = Reference(ServiceRequest/example-cbc-order)
+* partOf = Reference(Task/example-task-specialist)
+* status = #completed
+* businessStatus = task-business-status-cs#confirmed "Tasdiqlangan"
+* intent = $request-intent#order
+* focus = Reference(ServiceRequest/example-cbc-order)
+* for = Reference(Patient/example-emma)
+* owner = Reference(Organization/example-organization)
+* requestedPeriod
+  * start = "2026-03-07"
+  * end = "2026-03-08"
+* executionPeriod
+  * start = "2026-03-07"
+  * end = "2026-03-08"
+
+Instance: example-task-national-commission
+InstanceOf: UZCoreTask
+Description: "Example of a state-insurance workflow task assigned to the national (republican) health commission for approval"
+Usage: #example
+* language = #uz
+* code = task-code-cs#approve-national-commission "Respublika komissiyasining roziligi"
+* basedOn = Reference(ServiceRequest/example-cbc-order)
+* partOf = Reference(Task/example-task-regional-commission)
+* status = #completed
+* businessStatus = task-business-status-cs#confirmed "Tasdiqlangan"
+* intent = $request-intent#order
+* focus = Reference(ServiceRequest/example-cbc-order)
+* for = Reference(Patient/example-unidentified-patient)
+* owner = Reference(Organization/xonobod-medical-association)
+* requestedPeriod
+  * start = "2026-03-08"
+  * end = "2026-03-10"
+* executionPeriod
+  * start = "2026-03-08"
+  * end = "2026-03-10"
+
+Instance: example-task-hospitalization
+InstanceOf: UZCoreTask
+Description: "Example of a state-insurance workflow task representing the hospitalization step at the receiving clinic"
+Usage: #example
+* language = #uz
+* code = task-code-cs#approve-hospitalization "Kasalxonaga yotqizishni tasdiqlash"
+* basedOn = Reference(ServiceRequest/example-cbc-order)
+* partOf = Reference(Task/example-task-national-commission)
+* status = #completed
+* businessStatus = task-business-status-cs#completed "Tugallangan"
+* intent = $request-intent#order
+* focus = Reference(ServiceRequest/example-cbc-order)
+* for = Reference(Patient/example-david)
+* owner = Reference(Organization/example-organization)
+* requestedPeriod
+  * start = "2026-03-10"
+  * end = "2026-05-10"
+* executionPeriod
+  * start = "2026-03-10"
+  * end = "2026-05-10"

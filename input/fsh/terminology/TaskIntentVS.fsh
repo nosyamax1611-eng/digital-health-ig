@@ -6,7 +6,7 @@ Description: "Task Intent in Uzbekistan"
 * ^experimental = true
 * ^language = #uz
 
-* include codes from system $task-intent-cs
+* include codes from system TaskIntentCS
 
 
 
