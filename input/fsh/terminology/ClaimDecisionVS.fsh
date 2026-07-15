@@ -8,4 +8,4 @@ Description: "Claim Decision ValueSet with translations in Uzbek and Russian"
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(ClaimDecisionCS)
 
-* include codes from system ClaimDecisionCS
+* include codes from system $claim-decision
