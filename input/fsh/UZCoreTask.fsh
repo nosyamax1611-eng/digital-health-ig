@@ -23,7 +23,7 @@ Description: "Uzbekistan Core Task profile, used to  track workflow steps of the
 
 * basedOn 1..1 MS
   * ^short = "Service request under which this task is performed"
-* basedOn only Reference(UZCoreServiceRequest)
+* basedOn only Reference(UZCoreServiceRequestLaboratory)
 
 * partOf MS
   * ^short = "Parent task in the workflow"
@@ -68,11 +68,11 @@ Description: "Example of state-insurance workflow task assigned to the family do
 Usage: #example
 * language = #uz
 * code = task-code-cs#approve-family-doctor "Oilaviy shifokorning roziligi"
-* basedOn = Reference(UZCoreServiceRequest/example-cbc-order)
+* basedOn = Reference(UZCoreServiceRequestLaboratory/example-cbc-order)
 * status = #in-progress
 * businessStatus = task-business-status-cs#overdue "Muddati o'tgan"
 * intent = request-intent#order "Buyurtma"
-* focus = Reference(UZCoreServiceRequest/example-cbc-order)
+* focus = Reference(UZCoreServiceRequestLaboratory/example-cbc-order)
 * for = Reference(Patient/example-salim)
 * owner = Reference(Organization/xonobod-medical-association)
 * requestedPeriod
@@ -88,12 +88,12 @@ Description: "Example of a state-insurance workflow task assigned to a specialis
 Usage: #example
 * language = #uz
 * code = task-code-cs#approve-specialist "Mutaxassisning roziligi"
-* basedOn = Reference(UZCoreServiceRequest/example-cbc-order)
+* basedOn = Reference(UZCoreServiceRequestLaboratory/example-cbc-order)
 * partOf = Reference(Task/example-task-family-doctor)
 * status = #requested
 * businessStatus = task-business-status-cs#overdue "Muddati o'tgan"
 * intent = request-intent#order "Buyurtma"
-* focus = Reference(UZCoreServiceRequest/example-cbc-order)
+* focus = Reference(UZCoreServiceRequestLaboratory/example-cbc-order)
 * for = Reference(Patient/example-david)
 * owner = Reference(Organization/tashkent-diseases-hospital)
 * requestedPeriod
@@ -109,12 +109,12 @@ Description: "Example of a state-insurance workflow task assigned to the regiona
 Usage: #example
 * language = #uz
 * code = task-code-cs#approve-regional-commission "Mintaqaviy komissiyaning roziligi"
-* basedOn = Reference(ServiceRequest/example-cbc-order)
+* basedOn = Reference(UZCoreServiceRequestLaboratory/example-cbc-order)
 * partOf = Reference(Task/example-task-specialist)
 * status = #completed
 * businessStatus = task-business-status-cs#confirmed "Tasdiqlangan"
 * intent = $request-intent#order
-* focus = Reference(UZCoreServiceRequest/example-cbc-order)
+* focus = Reference(UZCoreServiceRequestLaboratory/example-cbc-order)
 * for = Reference(Patient/example-emma)
 * owner = Reference(Organization/example-organization)
 * requestedPeriod
@@ -130,12 +130,12 @@ Description: "Example of a state-insurance workflow task assigned to the nationa
 Usage: #example
 * language = #uz
 * code = task-code-cs#approve-national-commission "Respublika komissiyasining roziligi"
-* basedOn = Reference(UZCoreServiceRequest/example-cbc-order)
+* basedOn = Reference(UZCoreServiceRequestLaboratory/example-cbc-order)
 * partOf = Reference(Task/example-task-regional-commission)
 * status = #completed
 * businessStatus = task-business-status-cs#confirmed "Tasdiqlangan"
 * intent = $request-intent#order
-* focus = Reference(UZCoreServiceRequest/example-cbc-order)
+* focus = Reference(UZCoreServiceRequestLaboratory/example-cbc-order)
 * for = Reference(Patient/example-unidentified-patient)
 * owner = Reference(Organization/xonobod-medical-association)
 * requestedPeriod
@@ -151,12 +151,12 @@ Description: "Example of a state-insurance workflow task representing the hospit
 Usage: #example
 * language = #uz
 * code = task-code-cs#approve-hospitalization "Kasalxonaga yotqizishni tasdiqlash"
-* basedOn = Reference(UZCoreServiceRequest/example-cbc-order)
+* basedOn = Reference(UZCoreServiceRequestLaboratory/example-cbc-order)
 * partOf = Reference(Task/example-task-national-commission)
 * status = #completed
 * businessStatus = task-business-status-cs#completed "Tugallangan"
 * intent = $request-intent#order
-* focus = Reference(UZCoreServiceRequest/example-cbc-order)
+* focus = Reference(UZCoreServiceRequestLaboratory/example-cbc-order)
 * for = Reference(Patient/example-david)
 * owner = Reference(Organization/example-organization)
 * requestedPeriod
