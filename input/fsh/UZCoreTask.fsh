@@ -1,7 +1,7 @@
 Invariant: uzcore-tsk-1
-Description: "If Task.status is not completed, or failed, and requestPeriod.end is in the past, businessStatus should be set to overdue for SLA monitoring"
+Description: "If Task.status is not completed, or failed, and requestedPeriod.end is in the past, businessStatus should be set to overdue for SLA monitoring"
 Severity: #warning
-Expression: "(status != 'completed'and status != 'cancelled' and status != 'failed' and requestPeriod.end.exists() and requestedPeriod.end < now()) implies businessStatus.coding.exists(code = 'overdue')"
+Expression: "(status != 'completed' and status != 'cancelled' and status != 'failed' and requestedPeriod.end.exists() and requestedPeriod.end < now()) implies businessStatus.coding.exists(code = 'overdue')"
 
 Profile: UZCoreTask
 Parent: Task
@@ -71,7 +71,7 @@ Usage: #example
 * basedOn = Reference(ServiceRequest/example-cbc-order)
 * status = #in-progress
 * businessStatus = task-business-status-cs#overdue "Muddati o'tgan"
-* intent = task-intent-cs#order "Buyurtma"
+* intent = request-intent#order "Buyurtma"
 * focus = Reference(ServiceRequest/example-cbc-order)
 * for = Reference(Patient/example-salim)
 * owner = Reference(Organization/xonobod-medical-association)
@@ -90,10 +90,10 @@ Usage: #example
 * code = task-code-cs#approve-specialist "Mutaxassisning roziligi"
 * basedOn = Reference(ServiceRequest/example-cbc-order)
 * partOf = Reference(Task/example-task-family-doctor)
-* status = #requestedPeriod
+* status = #requested
 * businessStatus = task-business-status-cs#overdue "Muddati o'tgan"
-* intent = task-intent#order "Buyurtma"
-* focus = Reference(ServiceRequest/example-bcb-order)
+* intent = request-intent#order "Buyurtma"
+* focus = Reference(ServiceRequest/example-cbc-order)
 * for = Reference(Patient/example-david)
 * owner = Reference(Organization/tashkent-diseases-hospital)
 * requestedPeriod
