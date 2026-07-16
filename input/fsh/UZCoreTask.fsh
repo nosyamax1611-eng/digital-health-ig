@@ -39,7 +39,7 @@ Description: "Uzbekistan Core Task profile, used to  track workflow steps of the
 
 * intent MS
   * ^short = "Task intent"
-* intent from TasktIntentVS (required)
+* intent from TaskIntentVS (required)
 
 * focus 1..1 MS
   * ^short = "Service request being acted upon"
