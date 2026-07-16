@@ -39,11 +39,11 @@ Description: "Uzbekistan Core Task profile, used to  track workflow steps of the
 
 * intent MS
   * ^short = "Task intent"
-* intent from RequestIntentVS (required)
+* intent from TasktIntentVS (required)
 
 * focus 1..1 MS
   * ^short = "Service request being acted upon"
-* focus only Reference(UZCorePatient)
+* focus only Reference(ServiceRequest)
 
 * for MS
   * ^short = "Patient for whom this task is performed"
@@ -71,7 +71,7 @@ Usage: #example
 * basedOn = Reference(ServiceRequest/example-cbc-order)
 * status = #in-progress
 * businessStatus = task-business-status-cs#overdue "Muddati o'tgan"
-* intent = request-intent#order "Buyurtma"
+* intent = $request-intent#order "Buyurtma"
 * focus = Reference(ServiceRequest/example-cbc-order)
 * for = Reference(Patient/example-salim)
 * owner = Reference(Organization/xonobod-medical-association)
@@ -92,7 +92,7 @@ Usage: #example
 * partOf = Reference(Task/example-task-family-doctor)
 * status = #requested
 * businessStatus = task-business-status-cs#overdue "Muddati o'tgan"
-* intent = request-intent#order "Buyurtma"
+* intent = $request-intent#order "Buyurtma"
 * focus = Reference(ServiceRequest/example-cbc-order)
 * for = Reference(Patient/example-david)
 * owner = Reference(Organization/tashkent-diseases-hospital)
