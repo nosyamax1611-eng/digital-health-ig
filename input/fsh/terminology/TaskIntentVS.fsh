@@ -1,5 +1,5 @@
 ValueSet: TaskIntentVS
-Id: task-intent-vd
+Id: task-intent-vs
 Title: "Task Intent VS"
 Description: "Task Intent in Uzbekistan"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/task-intent-vs"
