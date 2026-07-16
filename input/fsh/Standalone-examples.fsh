@@ -11,7 +11,7 @@ Description: "Example of a patient"
   * given = "Алишер"
 
 Instance: example-cbc-order
-InstanceOf: UZCoreServiceRequestLaboratory
+InstanceOf: ServiceRequest
 Usage: #example
 Description: "Example ServiceRequest for CBC (Umumiy qon tahlili) order"
 * status = #active
