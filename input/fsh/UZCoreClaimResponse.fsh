@@ -20,12 +20,15 @@ Description: "Uzbekistan Core Claim Response profile, used to represent claim ad
   * ^short = "The payment workflow begins with a preauthorization request to reserve the estimated amount for the requested healthcare services. After the services are provided, a final Claim containing the completed Form 066 is submitted to finalize adjudication and payment."
 * patient 1..1 MS
   * ^short = "The patient for whom reimbursement is being requested."
+* patient only Reference(UZCorePatient)
 * created MS
   * ^short = "The date the claim was created."
 * insurer 
   * ^short = "The organization responsible for reimbursing the healthcare provider."
+* insurer only Reference(UZCoreOrganization)
 * request 
   * ^short = "The unique identifier of the claim."
+* request only Reference(Claim)
 * outcome MS
   * ^short = "Processing outcome of the claim"
 * outcome from ClaimResponseOutcomeVS (required)
