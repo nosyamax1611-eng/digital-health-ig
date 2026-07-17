@@ -5,9 +5,9 @@ Description: "Supplementary Task Intent Code System with Russian and English tra
 
 * insert SupplementCodeSystem(task-intent-cs, $task-intent, 5.0.0)
 
-* #unknown "Noma'lum"
+* #unknown 
   * ^designation[0].language = #ru
   * ^designation[=].value = "Неизвестно"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Unknown"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Noma'lum"
 
