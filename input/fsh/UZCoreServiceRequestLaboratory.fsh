@@ -55,7 +55,7 @@ Description: "Uzbekistan Core ServiceRequest Laboratory profile, used to represe
 * specimen only Reference(UZCoreSpecimen)
 * specimen ^short = "The specimen or specimens to be analyzed as part of the requested laboratory service."
 * note ^short = "Doctor's comment or conclution upon referral"
-* patientInstruction MS //we need to add markdown patient instructions.
+* patientInstruction MS 
 * patientInstruction ^short = "Instructions in terms that are understood by the patient or their caregiver regarding the laboratory service, such as preparation requirements or post-service care instructions."
 
 
@@ -74,8 +74,6 @@ Description: "Example laboratory ServiceRequest instance for UZCore."
 * occurrenceDateTime = "2026-01-16T09:30:00+05:00"
 * authoredOn = "2026-01-16T09:10:00+05:00"
 * requester = Reference(Practitioner/example-practitioner)
-// * insurance[0] = Reference(Coverage/uz-coverage-example-01) We don't have Coverage profile  yet
-//* supportingInfo[0] = Reference(UZCoreServiceRequest/uz-servicerequest-supporting-01)
 
 * extension[paymentType].valueCodeableConcept = payment-type-cs#paytype-0001-0001 "Free"
 
