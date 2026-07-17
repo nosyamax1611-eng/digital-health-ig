@@ -1,7 +1,7 @@
 ValueSet: ClaimResponseOutcomeVS
 Id: claim-response-outcome-vs
 Title: "Claim Response Outcome VS"
-Description: "Claim Response Outcome ValueSet with translations in Uzbek and Russian"
+Description: "Defines claim response outcome codes in Uzbek and Russian"
 
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/claim-response-outcome-vs"
 * ^experimental = true

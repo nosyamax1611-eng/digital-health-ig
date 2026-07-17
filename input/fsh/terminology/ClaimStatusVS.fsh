@@ -1,7 +1,7 @@
 ValueSet: ClaimStatusVS
 Id: claim-status-vs
 Title: "Claim Status VS"
-Description: "Claim Status ValueSet with translations in Uzbek and Russian"
+Description: "Defines Claim Status in Uzbek and Russian"
 
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/claim-status-vs"
 * ^experimental = true

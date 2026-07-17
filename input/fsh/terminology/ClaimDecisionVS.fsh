@@ -1,7 +1,7 @@
 ValueSet: ClaimDecisionVS
 Id: claim-decision-vs
 Title: "Claim Decision VS"
-Description: "Claim Decision ValueSet with translations in Uzbek and Russian"
+Description: "Defines claim response decision codes in Uzbek and Russian"
 
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/claim-decision-vs"
 * ^experimental = true

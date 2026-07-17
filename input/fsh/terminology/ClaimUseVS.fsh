@@ -1,7 +1,7 @@
 ValueSet: ClaimUseVS
 Id: claim-use-vs
 Title: "Claim Use VS"
-Description: "Claim Use ValueSet with translations in Uzbek and Russian"
+Description: "Defines Claim Use in Uzbek and Russian"
 
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/claim-use-vs"
 * ^experimental = true

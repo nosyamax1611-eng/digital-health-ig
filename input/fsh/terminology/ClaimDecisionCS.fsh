@@ -1,7 +1,7 @@
 CodeSystem: ClaimDecisionCS
 Id: claim-decision-cs
 Title: "Claim Decision CS"
-Description: "Claim Decision supplement with translations in Uzbek and Russian"
+Description: "Observation status supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(claim-decision-cs, $claim-decision, 5.0.0)
 * ^experimental = true

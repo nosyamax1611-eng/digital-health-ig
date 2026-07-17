@@ -1,7 +1,7 @@
 ValueSet: ClaimTypeVS
 Id: claim-type-vs
 Title: "Claim Type VS"
-Description: "Claim Type ValueSet with translations in Uzbek and Russian"
+Description: "Defines claim response type codes in Uzbek and Russian"
 
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/claim-type-vs"
 * ^experimental = true
