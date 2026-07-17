@@ -3,7 +3,7 @@ Id: task-status-cs
 Title: "Task Status CS"
 Description: "Task System supplement code system with translation in Uzbek and Russian"
 
-* insert SupplementCodeSystemDraft(task-status-cs, $task-status, 5.0.0)
+* insert SupplementCodeSystem(task-status-cs, $task-status, 5.0.0)
 
 * #draft 
   * ^designation[0].language = #ru

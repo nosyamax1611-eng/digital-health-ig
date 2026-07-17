@@ -4,7 +4,7 @@ Title: "Task Status VS"
 Description: "Task Status codes with Uzbek and Russian translations"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/task-status-vs"
 * ^experimental = true
-* ^extension[0].url = $task-status
+* ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(TaskStatusCS)
 
 * include codes from system $task-status
