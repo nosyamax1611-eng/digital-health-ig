@@ -5,14 +5,14 @@ Title: "UZ Core Observation"
 Description: "Uzbekistan Core Observation profile, used to represent clinical and laboratory observations using SNOMED CT, LOINC, or local codes"
 * ^experimental = true
 * ^status = #active
-//rules
+
 * identifier MS
 * instantiates[x] MS
 * basedOn 0..1 MS
 * basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest or UZCoreImmunizationRecommendation)
 * triggeredBy MS
 * triggeredBy.observation only Reference(UZCoreObservation)
-* triggeredBy.type from TriggeredByTypeVS (required)
+* triggeredBy.type from ObservationTriggeredByTypeVS (required)
 * triggeredBy.reason MS
 * partOf MS
 * partOf only Reference(MedicationAdministration or MedicationDispense or UZCoreProcedure or UZCoreImmunization or ImagingStudy)
@@ -61,10 +61,6 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * component.dataAbsentReason from DataAbsentReasonVS (extensible)
 * component.interpretation from ObservationInterpretationVS (extensible)
 
-
-// Vital Signs Examples
-
-Instance: blood-pressure-example
 InstanceOf: Observation
 Usage: #example
 Description: "Example of a blood pressure vital sign observation with systolic and diastolic components"
