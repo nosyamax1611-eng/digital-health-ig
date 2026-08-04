@@ -1,10 +1,7 @@
-ValueSet: ObservationNormalValueVS
-Id: observation-normal-value-vs
-Title: "Observation normal value"
-Description: "Observation normal value in Uzbekistan"
-* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/observation-normal-value-vs"
-* ^experimental = true
-* ^extension[0].url = $valueset-supplement
-* ^extension[=].valueCanonical = Canonical(ObservationNormalValueCS)
+ValueSet: ObservationReferenceRangeNormalValueVS
+Id: observation-referencerange-normalvalue-vs
+Title: "Значение нормы референтного диапазона"
+Description: "Значение нормы референтного диапазона — ограничено двумя кодами согласно спецификации"
 
-* include codes from system $observation-referencerange-normalvalue
+* ObservationNormalValueCS#Negative
+* ObservationNormalValueCS#Absent

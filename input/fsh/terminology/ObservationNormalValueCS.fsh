@@ -1,16 +1,17 @@
 CodeSystem: ObservationNormalValueCS
 Id: observation-normal-value-cs
-Title: "Observation normal value translations"
-Description: "Observation normal value supplement with translations in Uzbek and Russian"
-* insert SupplementCodeSystemDraft(observation-normal-value-cs, $observation-referencerange-normalvalue, 5.0.0)
+Title: "ObservationNormalValueCS"
+Description: "CodeSystem containing codes for normal value categories and reference interpretations of observation results, translated into Uzbek and Russian."
 
-* #negative
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Отрицательно"
-  * ^designation[+].language = #uz
+* insert SupplementCodeSystemDraft(observation-normal-value-cs, $normal-value, 5.0.0)
+
+* #Negative "Negative"
+  * ^designation[0].language = #uz
   * ^designation[=].value = "Manfiy"
-* #absent
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Отсутствует"
-  * ^designation[+].language = #uz
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "Отрицательно"
+* #Absent "Absent"
+  * ^designation[0].language = #uz
   * ^designation[=].value = "Mavjud emas"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "Отсутствует"
