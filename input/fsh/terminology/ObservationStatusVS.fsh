@@ -6,4 +6,4 @@ Description: "ValueSet containing codes that specify the status of a laboratory 
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/observation-status-vs"
 * ^experimental = true
 
-* include codes from system ObservationStatusCS
+* include codes from system $observation-status

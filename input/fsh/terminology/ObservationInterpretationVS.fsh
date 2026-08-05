@@ -6,4 +6,5 @@ Description: "Codes representing the clinical meaning of an observation result i
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(ObservationInterpretationCS)
-* include codes from system $observation-interpretation
+
+* include codes from system $interpretation

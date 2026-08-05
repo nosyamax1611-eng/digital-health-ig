@@ -6,4 +6,4 @@ Description: "ValueSet containing codes that specify the reasons why an expected
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/observation-data-absent-reason-vs"
 * ^experimental = true
 
-* include codes from system ObservationAbsentReasonCS
+* include codes from system $absent-reason

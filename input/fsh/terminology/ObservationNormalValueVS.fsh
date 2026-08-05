@@ -6,5 +6,4 @@ Description: "ValueSet containing codes that specify the interpretation of norma
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/observation-referencerange-normalvalue-vs"
 * ^experimental = true
 
-* ObservationNormalValueCS#Negative
-* ObservationNormalValueCS#Absent
+* include codes from system $normal-value

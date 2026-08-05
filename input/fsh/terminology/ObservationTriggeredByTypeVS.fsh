@@ -6,4 +6,4 @@ Description: "ValueSet containing codes that specify the type of relationship be
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/observation-triggeredbytype-vs"
 * ^experimental = true
 
-* include codes from system ObservationTriggeredByTypeCS
+* include codes from system $triggered-by-type
