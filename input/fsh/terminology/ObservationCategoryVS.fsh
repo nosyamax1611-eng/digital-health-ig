@@ -6,4 +6,4 @@ Description: "ValueSet containing codes that classify laboratory and clinical ob
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/observation-category-vs"
 * ^experimental = true
 
-* include codes from system ObservationCategoryCS
+* include codes from system $observation-category

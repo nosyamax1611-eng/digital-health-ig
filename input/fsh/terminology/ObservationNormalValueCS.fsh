@@ -5,12 +5,12 @@ Description: "CodeSystem containing codes for normal value categories and refere
 
 * insert SupplementCodeSystemDraft(observation-normal-value-cs, $normal-value, 5.0.0)
 
-* #Negative "Negative"
+* #negative 
   * ^designation[0].language = #uz
   * ^designation[=].value = "Manfiy"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Отрицательно"
-* #Absent "Absent"
+* #absent
   * ^designation[0].language = #uz
   * ^designation[=].value = "Mavjud emas"
   * ^designation[+].language = #ru

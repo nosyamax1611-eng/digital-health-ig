@@ -195,3 +195,4 @@ Alias: $interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInt
 Alias: $normal-value = http://hl7.org/fhir/observation-referencerange-normalvalue
 Alias: $reference-range = http://terminology.hl7.org/CodeSystem/referencerange-meaning
 Alias: $observation-status = http://hl7.org/fhir/observation-status
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
