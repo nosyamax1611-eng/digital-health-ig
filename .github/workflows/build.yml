@@ -1,8 +1,8 @@
 on:
   push:
-    branches: [ UZCoreTask ]
+    branches: [ UZCoreObservation ]
   pull_request:
-    branches: [ UZCoreTask ]
+    branches: [ UZCoreObservation ]
 
 jobs:
   build:
