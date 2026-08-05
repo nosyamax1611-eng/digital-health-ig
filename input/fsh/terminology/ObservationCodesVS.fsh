@@ -1,6 +1,6 @@
 ValueSet: ObservationCodesVS
 Id: observation-codes-vs
-Title: "Observation codes"
+Title: "ObservationCodesVS"
 Description: "Codes for observations, allowing use of LOINC, local laboratory codes, and SNOMED CT as appropriate for the context"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/observation-codes-vs"
 * ^experimental = true

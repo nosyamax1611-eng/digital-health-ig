@@ -96,8 +96,6 @@ Usage: #example
 
 * active = true
 
-// Illustrative: no panel-level ObservationDefinition exists yet, so this points at the hemoglobin analyte definition
-* extension[serviceDefinition].valueCanonical = Canonical(example-laboratory-hemoglobin)
 
 * extension[turnaroundTime].valueDuration.value = 4
 * extension[turnaroundTime].valueDuration.unit = "hours"

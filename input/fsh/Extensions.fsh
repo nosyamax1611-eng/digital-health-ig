@@ -122,4 +122,3 @@ Description: "Canonical reference to the laboratory ObservationDefinition that s
 * ^experimental = true
 
 * value[x] 1..1
-* value[x] only Canonical(UZCoreLaboratoryObservationDefinition)

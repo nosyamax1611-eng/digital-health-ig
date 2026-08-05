@@ -189,3 +189,9 @@ Alias: $observation-range-category-cs = https://terminology.dhp.uz/fhir/core/Cod
 Alias: $observation-range-category-vs = https://terminology.dhp.uz/fhir/core/ValueSet/observation-range-category-vs
 
 Alias: $task-intent = http://hl7.org/fhir/task-intent
+Alias: $triggered-by-type = http://hl7.org/fhir/observation-triggeredbytype
+Alias: $absent-reason = http://terminology.hl7.org/CodeSystem/data-absent-reason
+Alias: $interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
+Alias: $normal-value = http://hl7.org/fhir/observation-referencerange-normalvalue
+Alias: $reference-range = http://terminology.hl7.org/CodeSystem/referencerange-meaning
+Alias: $observation-status = http://hl7.org/fhir/observation-status

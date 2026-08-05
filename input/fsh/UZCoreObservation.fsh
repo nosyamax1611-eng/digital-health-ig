@@ -46,7 +46,6 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * referenceRange.low MS
 * referenceRange.high MS
 * referenceRange.normalValue MS
-* referenceRange.normalValue from ObservationNormalValueVS (extensible)
 * referenceRange.type from ReferenceRangeMeaningVS (preferred)
 * referenceRange.age MS
 * referenceRange.text MS
@@ -61,6 +60,7 @@ Description: "Uzbekistan Core Observation profile, used to represent clinical an
 * component.dataAbsentReason from DataAbsentReasonVS (extensible)
 * component.interpretation from ObservationInterpretationVS (extensible)
 
+Instance: blood-pressure-example
 InstanceOf: Observation
 Usage: #example
 Description: "Example of a blood pressure vital sign observation with systolic and diastolic components"

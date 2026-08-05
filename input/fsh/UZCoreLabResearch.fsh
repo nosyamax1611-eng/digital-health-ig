@@ -12,13 +12,13 @@ Description: "Uzbekistan Core Lab Research Observation profile, used to represen
 * identifier MS
 
 * status 1..1 MS
-* status from StatusVS (required)
+* status from ObservationStatusVS (required)
 
 * category 1..* MS
-* category from CategoryVS (preferred)
+* category from ObservationCategoryVS (preferred)
 
 * code 1..1 MS
-* code from LabResearchVS (preferred)
+* code from ObservationLabResearchVS (preferred)
 
 * subject 1..1 MS
 * subject only Reference(UZCorePatient)
@@ -37,15 +37,14 @@ Description: "Uzbekistan Core Lab Research Observation profile, used to represen
 * value[x] MS
 
 * interpretation 0..* MS
-* interpretation from InterpretationVS (preferred)
 
 * note MS
 
 * bodySite 0..1 MS
-* bodySite from BodySiteVS (preferred)
+* bodySite from ObservationBodySiteVS (preferred)
 
 * method 0..1 MS
-* method from MethodVS (preferred)
+* method from ObservationMethodVS (preferred)
 
 * specimen 0..1 MS
 * specimen only Reference(Specimen)
@@ -57,12 +56,10 @@ Description: "Uzbekistan Core Lab Research Observation profile, used to represen
 * referenceRange.low MS
 * referenceRange.high MS
 
-* referenceRange.type from ReferenceRangeTypeVS (preferred)
+* referenceRange.type from ObservationReferenceRangeTypeVS (preferred)
 
-* referenceRange.normalValue from NormalValueVS (preferred)
 
 * dataAbsentReason 0..1 MS
-* dataAbsentReason from AbsentReasonVS (preferred)
 
 * basedOn MS
 * basedOn only Reference(ServiceRequest)
@@ -70,7 +67,7 @@ Description: "Uzbekistan Core Lab Research Observation profile, used to represen
 * triggeredBy MS
 * triggeredBy.observation only Reference(Observation)
 
-* triggeredBy.type from TriggeredByTypeVS (required)
+* triggeredBy.type from ObservationTriggeredByTypeVS (required)
 
 * triggeredBy.reason MS
 
